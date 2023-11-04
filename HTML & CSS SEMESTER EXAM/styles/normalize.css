@@ -1,0 +1,226 @@
+  
+  /*-----------------------------------*\
+    #MEDIA QUERIES
+  \*-----------------------------------*/
+  /*** responsive for large than 575px screen */
+
+  
+@media (min-width: 575px) {
+  
+    :root {
+      --fs-6: 4.2rem;
+    }
+    /**
+     * REUSED STYLE
+     */
+    .container {
+      max-width: 550px;
+      width: 100%;
+      margin-inline: auto;
+    }
+  
+    .h1 { --fs-2: 6rem; }
+  
+    .h2 { --fs-2: 4.8rem; }
+
+    /*** HERO */
+  
+    .hero-banner { position: relative; }
+  
+    .hero .shape {
+      display: block;
+      position: absolute;
+      box-shadow: var(--shadow-2);
+      border-radius: var(--radius-20);
+    }
+  
+    .hero .shape-1 {
+      left: 0;
+      bottom: 60px;
+    }
+  
+    .hero .shape-2 {
+      top: 60px;
+      right: -10px;
+    }
+
+    /*** INSTRUCTION */
+  
+    .instruction-card .card-banner {
+      max-width: max-content;
+      margin-inline: auto;
+    }
+  
+    /*** STATS  */
+  
+    .stats-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    /*** PARTNERSHIP */
+  
+    .partnership-card .card-content { left: 40px; }
+  
+    .partnership-card .card-title { --fs-8: 3.5rem; }
+  
+  }
+  
+  /*** responsive for large than 768px screen */
+  
+  @media (min-width: 768px) {
+  
+    /*** REUSED STYLE */
+  
+    .container { max-width: 720px; }
+  
+    .grid-list { grid-template-columns: 1fr 1fr; }
+ 
+    /*** HEADER */
+
+    .navbar {
+      max-width: 428px;
+      left: -430px;
+    }
+  
+    .overlay {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: var(--black);
+      z-index: 1;
+      opacity: 0;
+      transition: var(--transition-1);
+      visibility: hidden;
+    }
+  
+    .overlay.active {
+      visibility: visible;
+      opacity: 0.7;
+    }
+
+    /*** TOP RESTAURANT, STATS   */
+  
+    :is(.top-restaurant, .stats) .grid-list { align-items: center; }
+  
+  }
+
+  /*** responsive for large than 992px screen */
+  
+  @media (min-width: 992px) {
+  
+    /*** REUSED STYLE */
+  
+    .container { max-width: 960px; }
+
+    /*** HERO  */
+  
+    .hero .container {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    .hero .shape-1 { bottom: 30px; }
+  
+    .hero .shape-2 {
+      top: 80px;
+      right: -40px;
+    }
+  
+    /*** INSTRUCTION */
+  
+    .instruction .section-text {
+      max-width: 60ch;
+      margin-inline: auto;
+    }
+  
+    .instruction .grid-list {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+  
+    /*** CTA, TESTIMONIALS, NEWSLETTER */
+    
+    :is(.cta, .testi, .newsletter) .container {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+
+    /*** FOOTER */
+  
+    .footer-top { grid-template-columns: 1fr 0.5fr 1fr; }
+  
+  }
+ 
+  /*** responsive for large than 1200px screen */
+  
+  @media (min-width: 1200px) {
+  
+    /*** CUSTOM PROPERTY */
+  
+    :root {
+  
+      /*** typography */
+  
+      --fs-6: 4.8rem;
+    }
+
+    /*** REUSED STYLE */
+  
+    .container { max-width: 1140px; }
+  
+    /*** HEADER */
+  
+    .navbar,
+    .navbar.active {
+      all: unset;
+      display: block;
+    }
+  
+    .nav-open-btn,
+    .nav-close-btn,
+    .navbar .logo,
+    .overlay { display: none; }
+  
+    .navbar-item { border-block-end: none; }
+  
+    .navbar-list {
+      display: flex;
+      gap: 40px;
+    }
+  
+    .header .container { gap: 60px; }
+  
+    .navbar-link { transition: var(--transition-1); }
+  
+    .navbar-link:is(:hover, :focus-visible) { color: var(--marigold); }
+  
+    .header .btn-primary { display: block; }
+  
+    .header-action {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .cart-btn {
+      background-color: var(--white);
+      border-radius: var(--radius-10);
+    }
+  
+    /*** STATS */
+  
+    .stats .grid-list {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+  
+    .stats-item .span { --fs-1: 4.8rem; }
+  
+  }

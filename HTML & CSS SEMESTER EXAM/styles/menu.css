@@ -1,0 +1,85 @@
+/* Reset default margins and padding */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set a background color for the body */
+  body {
+    background-color: #f4f4f4;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the navbar */
+  .navbar {
+    background-color: #fff;
+  }
+  
+  /* Style the navbar links */
+  .navbar-nav .nav-item .nav-link {
+    color: #333;
+  }
+  
+  /* Style the active navbar link */
+  .navbar-nav .nav-item .nav-link.active {
+    color: #007bff;
+  }
+  
+  /* Style the logo image */
+  .navbar-brand img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Style the container */
+  .container {
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  /* Style the section headings */
+  h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the carousel */
+  #myCarousel {
+    margin-top: 20px;
+  }
+  
+  /* Style the food menu link */
+  .pdf-link a {
+    color: #007bff;
+  }
+  
+  /* Style the food menu link on hover */
+  .pdf-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style the food items */
+  .col-md-6 h2 {
+    font-size: 18px;
+  }
+  
+  .col-md-6 p {
+    color: #777;
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: #333;
+ 
+    text-align: center;
+    padding: 10px 0;
+  }
+  h1 {
+    margin: 0;
+}
